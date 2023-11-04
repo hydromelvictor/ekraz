@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/lang.css')}}">
+{% endblock %}
+{% block main %}
+<section class="landing" id="prevent">
+    <div class="lang-div">
+        <div class="prevent" id="plan">
+            <h1>Planifier</h1>
+        </div>
+        <div class="prevent" id="build">
+            <h1>structurer</h1>
+        </div>
+        <div class="prevent" id="follow">
+            <h1>Suivre</h1>
+        </div>
+    </div>
+    <span>
+        Ekraz, un moyen plus simle de gerer vos projects
+    </span>
+    <div>
+        <a href="">Sign In</a>
+        <a href="">Sign Up</a>
+    </div>
+</section>
+<section class="landing" id="">
+    <div>image</div>
+    <span>
+        Faites exploser vos projets en de miniscule taches flexibles parfois
+    </span>
+</section>
+<section class="landing" id="">
+    Gardez votre equipe et vos client informer de vos avancements
+</section>
+<section class="landing" id="">
+    Particulier ou entreprise, planifier votre disponibilité, vos activites ainsi que votre travail
+</section>
+<section class="landing" id="">
+    Trouvez votre place avec Ekraz
+</section>
+{% endblock %}
+{% block js %}{% endblock %}

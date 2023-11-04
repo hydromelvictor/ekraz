@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut favicon icon" href="{{ url_for('static', filename='img/ekraz.png') }}" type="image/x-icon">
+
+    <!--link css-->
+    {% block css %}{% endblock %}
+    <link rel="stylesheet" href="../static/css/base.css">
+
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherish&family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Ekraz</title>
+</head>
+<body>
+    <header>
+        <a class="ekraz" href="#">
+            <div id="ekraz-logo-header"></div>
+            <h1>Ekraz</h1>
+        </a>
+        <nav class="ekraz-main-nav">
+            <div>
+                <a href="">Home</a>
+                <a href="">Tutoriel</a>
+                <a href="">Documentation</a>
+                <a href="">API</a>
+            </div>
+            <a href="" id="download">Download</a>
+            <div id="user"></div>
+        </nav>
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <a class="ekraz-foot" href="#">
+            <div id="ekraz-logo-footer"></div>
+            <span>&#169 2023 Ekraz</span>
+            
+        <div>
+            <a href="">Licences</a>
+            <a href="">CGU</a>
+        </div>
+        <a href="#">copyright all right reserved</a>
+    </footer>
+    {% block js %}{% endblock %}
+</body>
+</html>

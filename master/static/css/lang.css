@@ -1,0 +1,50 @@
+.landing {
+    width: 100%;
+    height: 60vh;
+}
+#prevent {
+    
+}
+.lang-div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+#prevent {
+    background-color: rgba(255, 254, 254, 0.419);
+}
+.prevent {
+    width: 20em;
+    height:20em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 4px 4px 6px #9D00C6, -4px -4px 6px #FC4F4F;
+    border-radius: 6px;
+}
+.prevent:hover {
+    box-shadow: 1px 1px 2px #9D00C6, -1px -1px 2px #FC4F4F;
+}
+.prevent h1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    align-items: center;
+    color: black;
+    font-size: 250%;
+    list-style: none;
+    /* background-color: rgba(0, 0, 0, 0.378); */
+    border-radius: 6px;
+}
+#plan {
+    background-image: url('../img/planifier.png');
+}
+#build {
+    background-image: url('../img/structurer.png');
+}
+#follow {
+    background-image: url('../img/suivre.png');
+}
