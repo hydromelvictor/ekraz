@@ -2,7 +2,7 @@
 """
 """
 # install library
-from sqlalchemy import Integer, String, Text, Boolean, ForeignKey
+from sqlalchemy import Integer, String, Text, Boolean, ForeignKey, Date
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 # standard library
@@ -94,8 +94,8 @@ class Experience(db.Model):
     profil = relationship('Profil', back_populates='experiences', foreign_keys=[profil_id])
 
     title: Mapped[str] = mapped_column(String, nullable=False)
-    start: Mapped[datetime] = mapped_column(String, default=datetime.now(tz=timezone))
-    end: Mapped[datetime] = mapped_column(String, default=datetime.now(tz=timezone))
+    start: Mapped[datetime] = mapped_column(Date, default=datetime.date)
+    end: Mapped[datetime] = mapped_column(Date, default=datetime.date)
     description: Mapped[str] = mapped_column(Text)
 
     @property
